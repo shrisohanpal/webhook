@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/webhook", (req, res) => {
-  console.log(req);
+  console.log(req.params);
   res.send(req.params);
 });
 
